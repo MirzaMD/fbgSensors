@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    height:120px;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    background-color: hsla(120, 73%, 42%, 0.845);
+    color:whitesmoke;
+    cursor: pointer;
+    margin-bottom:20px;
+}
+nav{
+    font-size: 1.5rem;
+}
+nav:hover{
+    background-color: whitesmoke;
+    color:hsla(120, 73%, 42%, 0.845);
+    text-align: center;
+    transition: 0.40s;
+}
+main img{
+    height:400px;
+}
+main{
+    display: flex;
+    height:100vh;
+    width:2000%;
+    gap:850px;
+    margin-left:320px;
+}
+#s1{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    gap:15px;
+}
+#s1 button{
+    height:30px;
+    width:170px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+    background-color: hsla(120, 73%, 42%, 0.845);
+    color:whitesmoke;
+    font-family: monospace;
+}
+#s1 button:hover{
+    background-color: hsla(120, 73%, 22%, 0.845);
+}
+#s1 h4:hover{
+font-size:2rem;
+cursor:pointer;
+transition: 0.35s;
+}
+#s1 h5:hover{
+    font-size:2rem;
+    cursor:pointer;
+    transition: 0.35s;
+    }
+    #s2{
+        display: flex;
+        flex-direction: column;
+        align-items:left;
+        gap:15px;
+    }
+    #s2 button{
+        height:30px;
+        width:170px;
+        border: none;
+        cursor: pointer;
+        border-radius: 15%;
+        background-color: hsla(120, 73%, 42%, 0.845);
+        color:whitesmoke;
+        font-family: monospace;
+    }
+    #s2 button:hover{
+        background-color: hsla(120, 73%, 22%, 0.845);
+    }
+    #s2 h4:hover{
+    font-size:2rem;
+    cursor:pointer;
+    transition: 0.35s;
+    }
+    #s2 h5:hover{
+        font-size:2rem;
+        cursor:pointer;
+        transition: 0.35s;
+        }
+        #s3{
+            display: flex;
+            flex-direction: column;
+            align-items:left;
+            gap:15px;
+        }
+        #s3 button{
+            height:30px;
+            width:170px;
+            border: none;
+            cursor: pointer;
+            border-radius: 15%;
+            background-color: hsla(120, 73%, 42%, 0.845);
+            color:whitesmoke;
+            font-family: monospace;
+        }
+        #s3 button:hover{
+            background-color: hsla(120, 73%, 22%, 0.845);
+        }
+        #s3 h4:hover{
+        font-size:2rem;
+        cursor:pointer;
+        transition: 0.35s;
+        }
+        #s3 h5:hover{
+            font-size:2rem;
+            cursor:pointer;
+            transition: 0.35s;
+            }        
+            #s4{
+                display: flex;
+                flex-direction: column;
+                align-items:left;
+                gap:15px;
+            }
+            #s4 button{
+                height:30px;
+                width:170px;
+                border: none;
+                cursor: pointer;
+                border-radius: 15%;
+                background-color: hsla(120, 73%, 42%, 0.845);
+                color:whitesmoke;
+                font-family: monospace;
+            }
+            #s4 button:hover{
+                background-color: hsla(120, 73%, 22%, 0.845);
+            }
+            #s4 h4:hover{
+            font-size:2rem;
+            cursor:pointer;
+            transition: 0.35s;
+            }
+            #s4 h5:hover{
+                font-size:2rem;
+                cursor:pointer;
+                transition: 0.35s;
+                }                           

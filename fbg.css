@@ -1,0 +1,424 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0fff4;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Main Container */
+#main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Header */
+#header-section {
+    background-color: #4caf50;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+/* Section Content */
+#content-section {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.article {
+    background-color: #fff;
+    border-left: 5px solid #4caf50;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px);
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+}
+
+.article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.sub-title {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.sub-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #4caf50;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+.description, .benefits-list {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* List Styling */
+.benefits-list {
+    list-style: none;
+    padding-left: 0;
+    animation: fadeInDelay 2s ease-in-out;
+}
+
+.benefits-list li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    color: #388e3c;
+}
+
+.benefits-list li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2e7d32;
+    font-size: 1.5rem;
+    transform: scale(0);
+    animation: popUp 0.3s ease-in-out forwards;
+}
+
+.benefits-list li:nth-child(odd):before {
+    animation-delay: 0.3s;
+}
+
+.benefits-list li:nth-child(even):before {
+    animation-delay: 0.6s;
+}
+
+/* Basic styling for the video tab */
+/* Centering the video tab */
+.video-tab {
+    margin: 0 auto;  /* Center horizontally */
+    width: 800px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+}
+
+/* Video container styling */
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styling for the video element */
+.custom-video {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Controls styling */
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.control-button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-button:hover {
+    background-color: #2e7d32;
+}
+
+.volume-bar {
+    width: 100px;
+}
+
+.time-display {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* General Styling for the Table Container */
+.table-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Styled Table */
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .styled-table thead tr {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .styled-table tbody tr {
+    background-color: #f3f3f3;
+    transition: all 0.3s ease;
+  }
+  
+  /* Row Hover Animation */
+  .styled-table tbody tr:hover {
+    background-color: #d1e7dd;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+  
+  /* Row hover border animation effect */
+  .styled-table tbody tr:hover td {
+    border: 2px solid #4caf50;
+  }
+  
+  /* Add animation for the rows on load */
+  .styled-table tbody tr {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 0.5s forwards ease-in-out;
+  }
+  
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Table Header animation */
+  .styled-table thead tr {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Styling the image gallery */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Each image container */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    gap : 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling the images */
+  .zoom-image {
+    width: 400px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for zoom effect */
+    border-radius: 10px; /* Optional: Rounded corners */
+  }
+  
+  /* Hover effect for images */
+  .zoom-image:hover {
+    transform: scale(1.1); /* Scale up image */
+    filter: brightness(1.1); /* Slightly brighten on hover */
+    z-index: 1; /* Bring the image in focus */
+}
+
+.animated-paragraph {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8fff2; /* Light green background */
+    border-left: 5px solid #4CAF50; /* Green left border */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+  }
+  
+  /* Fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Hover effects */
+  .animated-paragraph:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+
+/* Footer */
+#footer-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #388e3c;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 50px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDelay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    #content-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-title {
+        font-size: 3.5rem;
+    }
+
+    .sub-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #content-section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .main-title {
+        font-size: 4rem;
+    }
+
+    .sub-title {
+        font-size: 2.4rem;
+    }
+}

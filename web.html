@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <header> BODY MASS INDEX</header>
+    <main>
+        <input type="number" class="bmi" placeholder="Enter your height:" required>
+        <select id="heightStatus">
+            <option>
+                 Feet
+            </option>
+            <option>
+                Meters
+            </option>
+        </select>
+        <br>
+        <input type="number" class="bmi" placeholder="Enter your weight:" required>
+        <select id="weightStatus">
+            <option>
+                Kilogram
+            </option>
+            <option>
+                Pounds
+            </option>
+        </select>
+        <br>
+        <button id="results">SUBMIT</button>
+    </main>
+    <div id="conclusion">
+        Results
+    </div>
+<script src="web.js"></script>    
+</body>
+</html>
